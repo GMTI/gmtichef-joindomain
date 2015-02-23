@@ -12,7 +12,7 @@ script "joindomain" do
     kbrealm="#{node['joindomain']['kbrealm']}"
     #addomaindns=#{node['joindomain']['domainddns']}
     # join to domain
-    CMP=$(net ads dn "$trHostName,$domainPath" cn -S #{node['joindomain']['specificserver']} -P -l)
+    CMP=$(net ads dn "CN=$trHostName,$domainPath" cn -S #{node['joindomain']['specificserver']} -P -l)
     if [ -z $CMP]; then
       net ads join -U $DomainAdmin%$DomainAdminPW \
         createcomputer=$domainPath \
