@@ -1,28 +1,52 @@
-GMTI-joindomain Cookbook
+joindomain Cookbook
 =========================
-This cookbook will join a server to a domain.
+TODO: Enter the cookbook description here.
+
+e.g.
+This cookbook makes your favorite breakfast sandwich.
 
 Requirements
 ------------
-- `redhat` - This cookbook is written and tested on redhat systems. 
-- `centos` - This cookbook is written and tested on redhat based systems.
+TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+
+e.g.
+#### packages
+- `toaster` - GMTI-auth-config needs toaster to brown your bagel.
 
 Attributes
 ----------
 TODO: List your cookbook attributes here.
 
 e.g.
+#### GMTI-auth-config::default
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th>Default</th>
+  </tr>
+  <tr>
+    <td><tt>['GMTI-auth-config']['bacon']</tt></td>
+    <td>Boolean</td>
+    <td>whether to include bacon</td>
+    <td><tt>true</tt></td>
+  </tr>
+</table>
 
 Usage
 -----
 #### GMTI-auth-config::default
-Just include `GMTI-joindomain` in your node's `run_list`:
+TODO: Write usage instructions for each cookbook.
+
+e.g.
+Just include `GMTI-auth-config` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[GMTI-joindomain]"
+    "recipe[GMTI-auth-config]"
   ]
 }
 ```

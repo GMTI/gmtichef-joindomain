@@ -1,7 +1,7 @@
-script "joindomain" do
-  interpreter "bash"
-  user "root"
-  cwd "/tmp"
+script 'joindomain' do
+  interpreter 'bash'
+  user 'root'
+  cwd '/tmp'
   code <<-EOH
   #/bin/sh
   echo "joining domain"
